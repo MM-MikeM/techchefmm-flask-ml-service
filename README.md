@@ -20,3 +20,6 @@ TechChefMM demo flask machine learning service CI/CD DevOps project. MM
 
 ## Logs inspection from the running application.
 ![image](https://user-images.githubusercontent.com/32679444/235364349-921d6e0f-1a16-4da8-8d37-d6b9fb05a0e0.png)
+
+## Load test the application using Locust
+![image](https://user-images.githubusercontent.com/32679444/235365451-807179f7-f1e2-4d35-9758-6c7c77002225.png)
