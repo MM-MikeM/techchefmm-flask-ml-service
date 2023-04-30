@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv ~/.udacity-devops
+	python3 -m venv ~/.techchefmm-flask-ml-service
 
 install:
 	pip install --upgrade pip &&\
