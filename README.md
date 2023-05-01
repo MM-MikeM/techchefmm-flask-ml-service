@@ -23,3 +23,6 @@ TechChefMM demo flask machine learning service CI/CD DevOps project. MM
 
 ## Load test the application using Locust
 ![image](https://user-images.githubusercontent.com/32679444/235365451-807179f7-f1e2-4d35-9758-6c7c77002225.png)
+
+## Successful deploy of the Azure Web App : techchefmm-flask-ml-service project in Azure Pipelines
+![image](https://user-images.githubusercontent.com/32679444/235444955-2981b4af-c2b8-4e21-9790-7c030b8a01ab.png)
