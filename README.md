@@ -2,7 +2,7 @@
 
 ### **Overview**
 
-#### This project demonstrates using DevOps methods in action to build a Python Flask ML web application deployed using Git source control, GitHub Actions (build server) for CI (Continuous Integration), Azure Pipelines for CD (Continuous Delivery), and pylint and Locust for automated testing, in an Azure App Services serverless PaaS environment. #### 
+#### This project demonstrates using DevOps methods in action to build a Python Flask ML web application deployed using Git source control, GitHub Actions (build server) for CI (Continuous Integration), Azure Pipelines for CD (Continuous Delivery), pylint, and Locust for automated testing, in an Azure App Services serverless PaaS environment. #### 
 
 ### **Project Prerequisites**
 - Excel spreadsheet
@@ -96,7 +96,7 @@ Enter diagram here:
 
     ![image](https://user-images.githubusercontent.com/32679444/236321722-7e44125e-d03d-44cf-980d-cf2fbf4fcd70.png)
 
-- On the ***Code*** page, copy/past the following YAML scaffolding code into the "***Edit new file***" file space to compose the mail.yml file, and click the "***Start commit***" button on the upper rigthand side of the page.
+- On the ***Code*** page, copy/paste the following YAML scaffolding code into the "***Edit new file***" file space to compose the main.yml file, and click the "***Start commit***" button on the upper right-hand side of the page.
 
 name: Python application test with Github Actions
 
@@ -130,18 +130,20 @@ jobs:
 ![image](https://user-images.githubusercontent.com/32679444/236327723-95274d44-2517-4bc3-896e-c2991ef1c303.png)
 
 - Verify Continuous Integration remote tests pass.
-    + In the Azure Bash shell CLI, commit a change and push the change to GitHub then verify that both the lint and test steps in the project pass by cheching "***Actions***" on GitHub.
+    + In the Azure Bash shell CLI, commit a change and push the change to GitHub then verify that both the lint and test steps in the project pass by checking "***Actions***" on GitHub.
+
+- Done
+
+    + The following screenshot shows a successful Continuous Integration local test run.
 
 ![image](https://user-images.githubusercontent.com/32679444/236355707-65f32848-2407-4bb3-9fa9-b0236a82cf5f.png)
 
 ![image](https://user-images.githubusercontent.com/32679444/236355851-29baa37b-e9cd-43bc-bf50-49e7b93c1815.png)
 
-- Done
-
 
 # **Continuous Delivery on Azure**
 
-#### For the final step, Azure technologies is used to set up Continuous Delivery.  This involves setting up an Azure DevOps project, and Azure Pipelines to deploy the [Flask starter code](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files) to Azure App Services. ####
+#### For the final step, a Azure DevOps and GitHub integration is used to set up Continuous Delivery. This involves setting up an Azure DevOps project, and Azure Pipelines to deploy the [Flask starter code](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files) to Azure App Services. ####
 
 #### The following generic MS diagram, illustrates how continuous delivery can deploy a flask application through the use of Azure Pipelines and Azure App service. ####
 
@@ -150,9 +152,11 @@ jobs:
 - Create an Azure DevOps project and connect to Azure
     + Go to [dev.azure.com](https://dev.azure.com/)
     + Create a New Project with visibity set to "Private"
+
     ![image](https://user-images.githubusercontent.com/32679444/235901255-90ef93a8-6f35-4921-a6f0-5a8a5c049691.png)
     
     + On the ***New project*** page, select ***`Project settings`*** from the lower left blade.
+
     ![image](https://user-images.githubusercontent.com/32679444/236162168-ff36aa27-84fa-44fc-88f6-1d9efd337f44.png)
 
     + On the ***Project Settings*** blade under the Pipelines menu, select ***`Service connections`***.
@@ -181,7 +185,7 @@ jobs:
 
     ![image](https://user-images.githubusercontent.com/32679444/236176629-a12cd631-6a03-4cf7-8930-8968df215e5d.png)
 
-- Create a Python-specific pipeline to deploy the Azure App     Service using GitHub.
+- Create a Python-specific pipeline to deploy the Azure App Service using GitHub.
 
     + On the project's ***Welcome to the project!*** page, select ***`Pipelines`***.
 
@@ -199,15 +203,15 @@ jobs:
 
     ![image](https://user-images.githubusercontent.com/32679444/236183144-b086eba9-6cef-4132-bf76-b83ded6758cb.png)
 
-    + On the ***Review your pipeline YAML*** page, confirm the "azureServiceConnectionId:", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper righhand of the page.
+    + On the ***Review your pipeline YAML*** page, confirm the "azureServiceConnectionId:", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
 
     ![image](https://user-images.githubusercontent.com/32679444/236187046-02864fdf-5222-4e1f-97ed-4690235ce5d4.png)
 
-    + On the ***Save and run*** dialog box, enter a commmit message, select ***`Commit directly to the main branc`*** option, and click the ***`Save and run`*** button to lauch the deployment.
+    + On the ***Save and run*** dialog box, enter a commmit message, select ***`Commit directly to the main branch`*** option, and click the ***`Save and run`*** button to lauch the deployment.
 
     ![image](https://user-images.githubusercontent.com/32679444/236188896-8a429814-4445-491f-8f30-e0c2508ff0cf.png)
 
-    + Once the deploment completes, the navigate to ***Deploy Azure Web Appp*** as shown in the following to confirm a successful deployment.
+    + Once the deploment completes, the navigate to ***Deploy Azure Web Appp*** as shown in the following screenshot to confirm a successful deployment.
 
     ![image](https://user-images.githubusercontent.com/32679444/236193672-a38d4d00-d88b-40c4-95d1-4996595ae80d.png)
 
@@ -218,8 +222,7 @@ jobs:
 - Thank you for following the demo.  MM
 
 
-# techchefmm-flask-ml-service
-TechChefMM demo flask machine learning service CI/CD DevOps project. MM
+# TechChefMM demo flask machine learning service CI/CD DevOps project. MM
 
 # Project Screenshots:
 
