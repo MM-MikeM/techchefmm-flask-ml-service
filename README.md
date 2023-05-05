@@ -79,7 +79,7 @@
 
 #### This step configures GitHub Actions to test the project’s change events in GitHub and uses DevOps best practices to perform Continuous Integration remotely. When code is checked in and committed to the git-based repository, it will to be automatically tested, using configuration files and the GitHub Actions SaaS build service. Pushed changes to GitHub triggers the GitHub Actions container, which in turn runs a series of commands.  This diagram shows how code can be tested automatically by enabling GitHub Actions. ####
 
-Enter diagram here:
+![image](https://user-images.githubusercontent.com/32679444/236442467-a53dd65c-d4de-496d-953a-570312faad91.png)
 
 - Enable GitHub Actions
     + In your GitHub account, on the "***Repositories***" page, select the "***techchefmm-flask-ml-service***" repo.
