@@ -132,6 +132,10 @@ jobs:
 - Verify Continuous Integration remote tests pass.
     + In the Azure Bash shell CLI, commit a change and push the change to GitHub then verify that both the lint and test steps in the project pass by cheching "***Actions***" on GitHub.
 
+![image](https://user-images.githubusercontent.com/32679444/236355707-65f32848-2407-4bb3-9fa9-b0236a82cf5f.png)
+
+![image](https://user-images.githubusercontent.com/32679444/236355851-29baa37b-e9cd-43bc-bf50-49e7b93c1815.png)
+
 - Done
 
 
