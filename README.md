@@ -222,7 +222,7 @@ jobs:
 - Thank you for following the demo.  MM
 
 
-# TechChefMM demo flask machine learning service CI/CD DevOps project. MM
+# TechChefMM Demo flask ML service CI/CD DevOps project.
 
 # Project Screenshots:
 
