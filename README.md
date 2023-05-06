@@ -1,4 +1,4 @@
-# **Build a CI/CD Pipeline Azure DevOps and GitHub solution using DevOps methods**
+# **Build an Azure DevOps CI/CD solution using scaffolding, GitHub, Azure Pipelines, and GitHub Actions DevOps methods.**
 
 ### **Overview**
 
