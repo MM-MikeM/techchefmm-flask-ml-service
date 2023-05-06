@@ -20,7 +20,7 @@
 
 ### **Project Plan**
 
-#### It is important to employ an effective project plan and task tracking for a successful deployment. This project uses a Trello board for task tracking and an Excel spreadsheet with an example estimated project plan. The example Excel spreadsheet found [HERE]() shows a quarterly and yearly plan, estimates of the week-by-week deliverables, and estimation of difficulty or time for each task. The Trello board found [HERE](https://trello.com/invite/b/PjJwa5mw/ATTIbcc9fac0f3e968f650ef8c2b5d8fe8efC315C800/udacity-training-ms-azure-devops-project-build-a-ci-cd-pipeline) used for tracking this demo project deployment uses a board-based flow with cards for key tasks, “To Do”, “In Progress”, and “Done” boards. ####
+#### It is important to employ an effective project plan and task tracking for a successful deployment. This project uses a Trello board for task tracking and an Excel spreadsheet with an example estimated project plan. The example Excel spreadsheet found [HERE](https://www.dropbox.com/s/gv0wn500fjqztrd/Boston%20Housing%20project-mgmt.xlsx?dl=0) shows a quarterly and yearly plan, estimates of the week-by-week deliverables, and estimation of difficulty or time for each task. The Trello board found [HERE](https://trello.com/invite/b/PjJwa5mw/ATTIbcc9fac0f3e968f650ef8c2b5d8fe8efC315C800/udacity-training-ms-azure-devops-project-build-a-ci-cd-pipeline) used for tracking this demo project deployment uses a board-based flow with cards for key tasks, “To Do”, “In Progress”, and “Done” boards. ####
 
 # **Continuous Integration**
 
