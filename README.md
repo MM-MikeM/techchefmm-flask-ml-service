@@ -28,7 +28,7 @@
 
 #### This step uses the Azure Cloud Shell to set up a cloud-based development structure. A Makefile, tests, and application scaffolding are used for the project structure. The scaffolding code is in the root of the repo, and a copy is stored in the “CIScaffoldingCode” folder in this repo. Once this step is completed, you can test the code locally in the Azure Cloud Shell. This is a local continuous integration step that makes sure the code is in a testable and deployable state. The following diagram illustrates how the Azure Cloud Shell is used to create an empty scaffold of tests, source code, Makefile, and requirements. ####
 
-#### Enter diagram here: ####
+![image](https://user-images.githubusercontent.com/32679444/236600896-8716d511-960a-4838-8ecc-8676de2ca57f.png)
 
 ### **Create the Cloud-Based Development Environment**
 
