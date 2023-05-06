@@ -4,7 +4,7 @@
 
 #### This project demonstrates using DevOps methods in action to build a Python Flask ML web application deployed using Git source control, GitHub Actions (build server) for CI (Continuous Integration), Azure Pipelines for CD (Continuous Delivery), pylint, and Locust for automated testing, in an Azure App Services serverless PaaS environment. #### 
 
-![image](https://user-images.githubusercontent.com/32679444/236440487-c395ba49-739d-4d6e-ae34-55eb63e79661.png)
+![image](https://user-images.githubusercontent.com/32679444/236644169-993d7587-6a15-45c1-9744-8f15e41df062.png)
 
 ### **Project Prerequisites**
 - Excel spreadsheet
