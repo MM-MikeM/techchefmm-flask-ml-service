@@ -51,7 +51,7 @@
     + ***`git clone git@github.com:<TypeYourGitHubUserNameHere>/techchefmm-flask-ml-service.git`***
 
         + ***`NOTE-1:`*** ***Be SURE to use your GitHub User Name in the repo URL above.***
-        + ***`NOTE-2:`*** ***the scaffolding files are already in the repo root directory***
+        + ***`NOTE-2:`*** ***The scaffolding files are already in the repo root directory***
 
    ![image](https://user-images.githubusercontent.com/32679444/235736181-8234372b-ceac-4e2b-ba51-9842ce3a08cc.png)
 
@@ -61,7 +61,7 @@
     + Run the “***commands.sh***” bash script
         + ***`./commands.sh`***
 
-            + ***`NOTE:`*** ***the bash script uses scaffolding files and automates running the following atifacts installation, and local test tasks:***
+            + ***`NOTE:`*** ***The bash script uses scaffolding files and automates running the following atifacts installation, and local test tasks:***
                 + ***`python3 -m venv ~/.techchefmm-flask-ml-service`***
                 + ***`source ~/.techchefmm-flask-ml-service/bin/activate`***
                 + ***`make install`***
@@ -81,7 +81,7 @@
 ![image](https://user-images.githubusercontent.com/32679444/236651102-297d5edb-5837-4c7b-af7c-f9a3014b5ac0.png)
 
 - ### Enable GitHub Actions
-    + In your GitHub account, on the "***Repositories***" page, select the "***techchefmm-flask-ml-service***" repo.
+    + #### In your GitHub account, on the "***Repositories***" page, select the "***techchefmm-flask-ml-service***" repo.
 
     ![image](https://user-images.githubusercontent.com/32679444/236315548-071fe2e6-a0dc-45d5-8c38-55998a7d761e.png)
 
