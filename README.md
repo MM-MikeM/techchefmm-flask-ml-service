@@ -1,18 +1,18 @@
 # **Azure DevOps CI/CD solution using scaffolding, GitHub, Azure Pipelines, and GitHub Actions DevOps methods.**
 
-### **Overview**
+## **Overview**
 
 #### This project demonstrates using DevOps methods in action to build a Python Flask ML web application deployed using Git source control, GitHub Actions (build server) for CI (Continuous Integration), Azure Pipelines for CD (Continuous Delivery), pylint, and Locust for automated testing, in an Azure App Services serverless PaaS environment. #### 
 
 ![image](https://user-images.githubusercontent.com/32679444/236644169-993d7587-6a15-45c1-9744-8f15e41df062.png)
 
-### **Project Prerequisites**
-- Excel spreadsheet
-- Create Trello board free account: [LINK](https://trello.com/)
-- Create Azure free account: [LINK](https://azure.microsoft.com/en-us/free/)
-- Create GitHub Personal free account: [LINK](https://github.com/join?plan=free&ref_cta=Join%2520for%2520free&ref_loc=cards&ref_page=%2Fpricing&source=pricing-card-free)
-- Flask starter code: [LINK](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files)
-- Locust installation: [LINK](https://docs.locust.io/en/stable/installation.html) (***for this project, will be installed by the Makefile***)
+## **Project Prerequisites**
+- ### Excel spreadsheet
+- ### Create Trello board free account: [LINK](https://trello.com/)
+- ### Create Azure free account: [LINK](https://azure.microsoft.com/en-us/free/)
+- ### Create GitHub Personal free account: [LINK](https://github.com/join?plan=free&ref_cta=Join%2520for%2520free&ref_loc=cards&ref_page=%2Fpricing&source=pricing-card-free)
+- ### Flask starter code: [LINK](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files)
+- ### Locust installation: [LINK](https://docs.locust.io/en/stable/installation.html) (***for this project, will be installed by the Makefile***)
 
 #### Use this project to get an idea of how to build a GitHub repository with scaffolding to perform Continuous Integration and Continuous Delivery. The project uses GitHub Actions with Makefile, requirements.txt files, and application code to perform Continuous Integration and Azure Pipelines to enable Continuous Delivery to Azure App Service to deploy a Machine Learning Microservice API. ####
 
