@@ -47,8 +47,7 @@
 
 - ### [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the "***techchefmm-flask-ml-service***" GitHub repo (***For this demo, do not rename the forked repo***).
 
-- ### In the Azure bash shell CLI, run the following command to clone the "***techchefmm-flask-ml-service***"
- GitHub repo:
+- ### In the Azure bash shell CLI, run the following command to clone the "***techchefmm-flask-ml-service***" GitHub repo:
     + ***`git clone git@github.com:<TypeYourGitHubUserNameHere>/techchefmm-flask-ml-service.git`***
 
         + ***`NOTE-1:`*** ***Be SURE to use your GitHub User Name in the repo URL above.***
