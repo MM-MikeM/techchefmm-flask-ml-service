@@ -85,19 +85,19 @@
 
     ![image](https://user-images.githubusercontent.com/32679444/236315548-071fe2e6-a0dc-45d5-8c38-55998a7d761e.png)
 
-    + On the "***techchefmm-flask-ml-service***" repo ***Code*** page Click ***Actions***.
+    + #### On the "***techchefmm-flask-ml-service***" repo ***Code*** page Click ***Actions***.
 
     ![image](https://user-images.githubusercontent.com/32679444/236317459-654b52fa-f029-449d-935f-0c2a6d120dbe.png)
 
-    + On the ***Actions*** page, click ***New Workflow***.
+    + #### On the ***Actions*** page, click ***New Workflow***.
 
     ![image](https://user-images.githubusercontent.com/32679444/236318293-5ecd8abc-d0aa-4096-8bda-12ec42c1791d.png)
 
-    + On the ***Choose a workflow*** page, click the "***set up a workflow yourself***" link.
+    + #### On the ***Choose a workflow*** page, click the "***set up a workflow yourself***" link.
 
     ![image](https://user-images.githubusercontent.com/32679444/236321722-7e44125e-d03d-44cf-980d-cf2fbf4fcd70.png)
 
-- ### On the ***Code*** page, copy/paste the following YAML scaffolding code into the "***Edit new file***" file space to compose the main.yml file, and click the "***Start commit***" button on the upper right-hand side of the page.
+    + #### On the ***Code*** page, copy/paste the following YAML scaffolding code into the "***Edit new file***" file space to compose the main.yml file, and click the "***Start commit***" button on the upper right-hand side of the page.
 ```
 name: Python application test with Github Actions
 
@@ -126,16 +126,16 @@ jobs:
 ```
 ![image](https://user-images.githubusercontent.com/32679444/236658239-865be3ae-6329-4e7d-9d15-93186f878b91.png)
 
-+ In the ***Commit new file*** dialog box, enter a commit message and click the "***Commit new file***" button.
+    + #### In the ***Commit new file*** dialog box, enter a commit message and click the "***Commit new file***" button.
 
 ![image](https://user-images.githubusercontent.com/32679444/236327723-95274d44-2517-4bc3-896e-c2991ef1c303.png)
 
 - ### Verify Continuous Integration remote tests pass.
-    + In the Azure Bash shell CLI, commit a change and push the change to GitHub then verify that both the lint and test steps in the project pass by checking "***Actions***" on GitHub.
+    + #### In the Azure Bash shell CLI, commit a change and push the change to GitHub then verify that both the lint and test steps in the project pass by checking "***Actions***" on GitHub.
 
 - ### Done
 
-    + The following screenshot shows a successful Continuous Integration local test run.
+    + #### The following screenshot shows a successful Continuous Integration local test run.
 
 ![image](https://user-images.githubusercontent.com/32679444/236355707-65f32848-2407-4bb3-9fa9-b0236a82cf5f.png)
 
@@ -144,83 +144,83 @@ jobs:
 
 # **Continuous Delivery on Azure**
 
-#### For the final step, a Azure DevOps and GitHub integration is used to set up Continuous Delivery. This involves setting up an Azure DevOps project, and Azure Pipelines to deploy the [Flask starter code](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files) to Azure App Services. ####
+### For the final step, a Azure DevOps and GitHub integration is used to set up Continuous Delivery. This involves setting up an Azure DevOps project, and Azure Pipelines to deploy the [Flask starter code](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files) to Azure App Services. ####
 
-#### The following generic MS diagram, illustrates how continuous delivery can deploy a flask application through the use of Azure Pipelines and Azure App service. ####
+### The following generic MS diagram, illustrates how continuous delivery can deploy a flask application through the use of Azure Pipelines and Azure App service. ####
 
 ![image](https://user-images.githubusercontent.com/32679444/236104749-c893a042-525e-4933-b047-9723a67a44c4.png)
 
-- Create an Azure DevOps project and connect to Azure
-    + Go to [dev.azure.com](https://dev.azure.com/)
-    + Create a New Project with visibity set to "Private"
+- ### Create an Azure DevOps project and connect to Azure
+    + #### Go to [dev.azure.com](https://dev.azure.com/)
+    + #### Create a New Project with visibity set to "Private"
 
     ![image](https://user-images.githubusercontent.com/32679444/235901255-90ef93a8-6f35-4921-a6f0-5a8a5c049691.png)
     
-    + On the ***New project*** page, select ***`Project settings`*** from the lower left blade.
+    + #### On the ***New project*** page, select ***`Project settings`*** from the lower left blade.
 
     ![image](https://user-images.githubusercontent.com/32679444/236162168-ff36aa27-84fa-44fc-88f6-1d9efd337f44.png)
 
-    + On the ***Project Settings*** blade under the Pipelines menu, select ***`Service connections`***.
+    + #### On the ***Project Settings*** blade under the Pipelines menu, select ***`Service connections`***.
 
     ![image](https://user-images.githubusercontent.com/32679444/236163628-5cc0c605-f863-4414-9057-4dfac63100e4.png)
 
-    + On the ***Create your first service connection*** page, click the ***`Create service connection`*** button.
+    + #### On the ***Create your first service connection*** page, click the ***`Create service connection`*** button.
 
     ![image](https://user-images.githubusercontent.com/32679444/236165238-13ea1f1c-ca73-490c-b82f-ee8c1ecc6d49.png)
 
-    + On the ***New service connection*** dialog box, select ***`Azure Resource Manager`*** and click the ***`Next`*** button.
+    + #### On the ***New service connection*** dialog box, select ***`Azure Resource Manager`*** and click the ***`Next`*** button.
 
     ![image](https://user-images.githubusercontent.com/32679444/236167152-0cb993b7-f46a-4887-bd35-2468a10bb039.png)
 
-    + On the ***New Azure service connection*** dialog box, select ***`Service principal (automatic)`***, and click the ***`Next`*** button.
+    + #### On the ***New Azure service connection*** dialog box, select ***`Service principal (automatic)`***, and click the ***`Next`*** button.
     
     ![image](https://user-images.githubusercontent.com/32679444/236169001-454322ef-8684-46e4-aaf2-60567694e413.png)
 
-    + On the next ***New Azure service connection*** dialog box, under Scope level, select ***`Subscription`***, select the ***`Subcription`*** and ***`Resource Group`*** where the Project's Azure App Service is located, enter a unique ***`Service connection name`***, click the ***`Grant access permissions to all pipelines`*** check box, finally click the ***`Save`*** button.
+    + #### On the next ***New Azure service connection*** dialog box, under Scope level, select ***`Subscription`***, select the ***`Subcription`*** and ***`Resource Group`*** where the Project's Azure App Service is located, enter a unique ***`Service connection name`***, click the ***`Grant access permissions to all pipelines`*** check box, finally click the ***`Save`*** button.
 
      ![image](https://user-images.githubusercontent.com/32679444/236172903-98fcc3bd-a1a8-437f-bff4-3a351086b56e.png)
 
-    + On the resulting ***`Service connections`*** page at the top projects path, select the newly create project to return to the ***Welcome to the project!*** page.
+    + #### On the resulting ***`Service connections`*** page at the top projects path, select the newly create project to return to the ***Welcome to the project!*** page.
 
     ![image](https://user-images.githubusercontent.com/32679444/236176246-f87df059-c373-4e19-8b4b-bb55c54feff1.png)
 
     ![image](https://user-images.githubusercontent.com/32679444/236176629-a12cd631-6a03-4cf7-8930-8968df215e5d.png)
 
-- Create a Python-specific pipeline to deploy the Azure App Service using GitHub.
+- ### Create a Python-specific pipeline to deploy the Azure App Service using GitHub.
 
-    + On the project's ***Welcome to the project!*** page, select ***`Pipelines`***.
+    + #### On the project's ***Welcome to the project!*** page, select ***`Pipelines`***.
 
     ![image](https://user-images.githubusercontent.com/32679444/236180795-5015cbda-b694-45f4-803e-69340acffb6a.png)
 
-    + On the ***Creat your first Pipeline*** page, click the ***`Create Pipeline`*** button.
+    + #### On the ***Creat your first Pipeline*** page, click the ***`Create Pipeline`*** button.
 
     ![image](https://user-images.githubusercontent.com/32679444/236181461-6b3130a7-de95-4428-b4a1-165bc22e691e.png)
 
-    + On the ***Where is your code?*** page, select ***`GitHub (YAML)`***.
+    + #### On the ***Where is your code?*** page, select ***`GitHub (YAML)`***.
 
     ![image](https://user-images.githubusercontent.com/32679444/236182318-247833a3-4868-4e4d-bf90-c842db55aac7.png)
 
-    + On the ***Select a repository*** page, select the GitHub repository.
+    + #### On the ***Select a repository*** page, select the GitHub repository.
 
     ![image](https://user-images.githubusercontent.com/32679444/236183144-b086eba9-6cef-4132-bf76-b83ded6758cb.png)
 
-    + On the ***Review your pipeline YAML*** page, confirm the "azureServiceConnectionId:", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
+    + #### On the ***Review your pipeline YAML*** page, confirm the "azureServiceConnectionId:", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
 
     ![image](https://user-images.githubusercontent.com/32679444/236187046-02864fdf-5222-4e1f-97ed-4690235ce5d4.png)
 
-    + On the ***Save and run*** dialog box, enter a commmit message, select ***`Commit directly to the main branch`*** option, and click the ***`Save and run`*** button to lauch the deployment.
+    + #### On the ***Save and run*** dialog box, enter a commmit message, select ***`Commit directly to the main branch`*** option, and click the ***`Save and run`*** button to lauch the deployment.
 
     ![image](https://user-images.githubusercontent.com/32679444/236188896-8a429814-4445-491f-8f30-e0c2508ff0cf.png)
 
-    + Once the deploment completes, the navigate to ***Deploy Azure Web Appp*** as shown in the following screenshot to confirm a successful deployment.
+    + #### Once the deploment completes, the navigate to ***Deploy Azure Web Appp*** as shown in the following screenshot to confirm a successful deployment.
 
     ![image](https://user-images.githubusercontent.com/32679444/236193672-a38d4d00-d88b-40c4-95d1-4996595ae80d.png)
 
-    + Done
+    + #### Done
 
-- Remember to delete the Azure Resource Group used for the demo to avoid incurring Azure billing cost.  MM
+- ### Remember to delete the Azure Resource Group used for the demo to avoid incurring Azure billing cost.  MM
 
-- Thank you for following the demo.  MM
+- ### Thank you for following the demo.  MM
 
 
 # TechChefMM Demo flask ML service CI/CD DevOps project.
