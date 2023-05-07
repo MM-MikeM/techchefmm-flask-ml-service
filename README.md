@@ -190,7 +190,7 @@ jobs:
 
     + #### On the project's ***Welcome to the project!*** page, select ***`Pipelines`***.
 
-    ![image](https://user-images.githubusercontent.com/32679444/236180795-5015cbda-b694-45f4-803e-69340acffb6a.png)
+    ![image](https://user-images.githubusercontent.com/32679444/236703773-8c37e08a-3367-4284-9dc7-5657a8c6567c.png)
 
     + #### On the ***Creat your first Pipeline*** page, click the ***`Create Pipeline`*** button.
 
