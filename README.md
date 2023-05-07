@@ -222,7 +222,7 @@ jobs:
 
 - ### Thank you for following the demo.  MM
 
-# Project improvement suggestions:
+# Project improvements:
 - ### The project's solution can be improved by configuing [Azure App Service Monitoring](https://learn.microsoft.com/en-us/azure/app-service/web-sites-monitor), [Automatic scaling](https://learn.microsoft.com/en-us/azure/app-service/manage-automatic-scaling?tabs=azure-portal), [Cost Monitoring and budgets](https://learn.microsoft.com/en-us/azure/app-service/overview-manage-costs#monitor-costs), and [CI/CD automated load tests](https://learn.microsoft.com/en-us/azure/load-testing/tutorial-identify-performance-regression-with-cicd?wt.mc_id=loadtesting_acompara3_webpage_cnl&tabs=pipelines).
 
 # Project screenshots demonstrating key steps.
