@@ -204,7 +204,7 @@ jobs:
 
     ![image](https://user-images.githubusercontent.com/32679444/236183144-b086eba9-6cef-4132-bf76-b83ded6758cb.png)
 
-    + #### On the ***Review your pipeline YAML*** page, confirm the "***azureServiceConnectionId:***", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
+    + #### On the ***Review your pipeline YAML*** page, confirm the "***azureServiceConnectionId:***", "***Python version:***", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
 
     ![image](https://user-images.githubusercontent.com/32679444/236187046-02864fdf-5222-4e1f-97ed-4690235ce5d4.png)
 
@@ -222,10 +222,10 @@ jobs:
 
 - ### Thank you for following the demo.  MM
 
+# Project improvement suggestions:
+- ### The project's solution can be improved by configuing [Azure App Service Monitoring](https://learn.microsoft.com/en-us/azure/app-service/web-sites-monitor), [Automatic scaling](https://learn.microsoft.com/en-us/azure/app-service/manage-automatic-scaling?tabs=azure-portal), [Cost Monitoring and budgets](https://learn.microsoft.com/en-us/azure/app-service/overview-manage-costs#monitor-costs), and [CI/CD automated load tests](https://learn.microsoft.com/en-us/azure/load-testing/tutorial-identify-performance-regression-with-cicd?wt.mc_id=loadtesting_acompara3_webpage_cnl&tabs=pipelines).
 
-# TechChefMM Demo flask ML service CI/CD DevOps project.
-
-# Project Screenshots:
+# Project screenshots demonstrating key steps.
 
 ## Screenshot showing the project cloned into Azure Cloud Shell.
 ![image](https://user-images.githubusercontent.com/32679444/234542762-180b15b1-ea54-462e-90eb-2512106d984e.png)
