@@ -99,7 +99,7 @@
     ![image](https://user-images.githubusercontent.com/32679444/236321722-7e44125e-d03d-44cf-980d-cf2fbf4fcd70.png)
 
 - On the ***Code*** page, copy/paste the following YAML scaffolding code into the "***Edit new file***" file space to compose the main.yml file, and click the "***Start commit***" button on the upper right-hand side of the page.
-
+```
 name: Python application test with Github Actions
 
 on: [push]
@@ -124,7 +124,7 @@ jobs:
     - name: Test with pytest
       run: |
         make test
-
+```
 ![image](https://user-images.githubusercontent.com/32679444/236326590-cf7a44b3-1d63-4d41-bd5f-a3f3ffa9b588.png)
 
 + In the ***Commit new file*** dialog box, enter a commit message and click the "***Commit new file***" button.
