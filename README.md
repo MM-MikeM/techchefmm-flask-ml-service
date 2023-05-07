@@ -125,7 +125,7 @@ jobs:
       run: |
         make test
 ```
-![image](https://user-images.githubusercontent.com/32679444/236326590-cf7a44b3-1d63-4d41-bd5f-a3f3ffa9b588.png)
+![image](https://user-images.githubusercontent.com/32679444/236658239-865be3ae-6329-4e7d-9d15-93186f878b91.png)
 
 + In the ***Commit new file*** dialog box, enter a commit message and click the "***Commit new file***" button.
 
