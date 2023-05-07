@@ -2,7 +2,7 @@
 
 ## **Overview**
 
-#### This project demonstrates using DevOps methods in action to build a Python Flask ML web application deployed using Git source control, GitHub Actions (build server) for CI (Continuous Integration), Azure Pipelines for CD (Continuous Delivery), pylint, and Locust for automated testing, in an Azure App Services serverless PaaS environment. #### 
+### This project demonstrates using DevOps methods in action to build a Python Flask ML web application deployed using Git source control, GitHub Actions (build server) for CI (Continuous Integration), Azure Pipelines for CD (Continuous Delivery), pylint, and Locust for automated testing, in an Azure App Services serverless PaaS environment. #### 
 
 ![image](https://user-images.githubusercontent.com/32679444/236644169-993d7587-6a15-45c1-9744-8f15e41df062.png)
 
@@ -24,20 +24,20 @@
 
 # **Continuous Integration**
 
-### **Set Up Azure Cloud Shell**
+## **Set Up Azure Cloud Shell**
 
-#### This step uses the Azure Cloud Shell to set up a cloud-based development structure. A Makefile file, Locust test, and application scaffolding are used for the project structure. The scaffolding code is in the root of the repo, and a copy is stored in the “CIScaffoldingCode” folder in this repo. Once this step is completed, you can test the code locally in the Azure Cloud Shell. This is a local continuous integration step that makes sure the code is in a testable and deployable state. The following diagram illustrates how the Azure Cloud Shell is used to run a bash script to execute the artifacts in the project’s scaffold, which in turn initiates source code, the project requirements, a Makefile file, a Locust test, and a prediction. ####
+### This step uses the Azure Cloud Shell to set up a cloud-based development structure. A Makefile file, Locust test, and application scaffolding are used for the project structure. The scaffolding code is in the root of the repo, and a copy is stored in the “CIScaffoldingCode” folder in this repo. Once this step is completed, you can test the code locally in the Azure Cloud Shell. This is a local continuous integration step that makes sure the code is in a testable and deployable state. The following diagram illustrates how the Azure Cloud Shell is used to run a bash script to execute the artifacts in the project’s scaffold, which in turn initiates source code, the project requirements, a Makefile file, a Locust test, and a prediction. ####
 
 ![image](https://user-images.githubusercontent.com/32679444/236600896-8716d511-960a-4838-8ecc-8676de2ca57f.png)
 
-### **Create the Cloud-Based Development Environment**
+## **Create the Cloud-Based Development Environment**
 
-#### To set up an initial project structure in the Azure Cloud Shell environment, first, create a GitHub repository. Next, launch an Azure Cloud Shell environment, create SSH keys, and integrate GitHub repository communication. ####
-- If not already signed into your GitHub account, sign in: [GitHub](https://github.com/login)
-- Setup an Azure Cloud Shell environment: [LINK](https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart?tabs=azurecli)
+### To set up an initial project structure in the Azure Cloud Shell environment, first, create a GitHub repository. Next, launch an Azure Cloud Shell environment, create SSH keys, and integrate GitHub repository communication. ####
+- ### If not already signed into your GitHub account, sign in: [GitHub](https://github.com/login)
+- ### Setup an Azure Cloud Shell environment: [LINK](https://learn.microsoft.com/en-us/azure/cloud-shell/quickstart?tabs=azurecli)
     + Be sure to select Bash for your command-line shell environment.
 
-- In the Azure bash shell CLI, create ssh-keys using the following command, copy the Public key to the clipboard, and [add the key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows&tool=webui#:~:text=with%20SSH/-,Adding%20a%20new%20SSH%20key%20to%20your%20GitHub%20account,-In%20this%20article):
+- ### In the Azure bash shell CLI, create ssh-keys using the following command, copy the Public key to the clipboard, and [add the key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account?platform=windows&tool=webui#:~:text=with%20SSH/-,Adding%20a%20new%20SSH%20key%20to%20your%20GitHub%20account,-In%20this%20article):
    + ***`ssh-keygen -t rsa`***
         
         + #### Note: ***you can display your public key with the following cat command, replacing ~/.ssh/id_rsa.pub with the path and filename of your own public key file if needed:***
@@ -45,9 +45,9 @@
 
    ![image](https://user-images.githubusercontent.com/32679444/235663631-27a35e5f-2d12-404f-bf37-9ca90927b3b2.png)
 
-- [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the "***techchefmm-flask-ml-service***" GitHub repo (***For this demo, do not rename the forked repo***).
+- ### [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the "***techchefmm-flask-ml-service***" GitHub repo (***For this demo, do not rename the forked repo***).
 
-- In the Azure bash shell CLI, run the following command to clone the "***techchefmm-flask-ml-service***"
+- ### In the Azure bash shell CLI, run the following command to clone the "***techchefmm-flask-ml-service***"
  GitHub repo:
     + ***`git clone git@github.com:<TypeYourGitHubUserNameHere>/techchefmm-flask-ml-service.git`***
 
@@ -57,7 +57,7 @@
    ![image](https://user-images.githubusercontent.com/32679444/235736181-8234372b-ceac-4e2b-ba51-9842ce3a08cc.png)
 
 ### **Project Scaffolding**
-- Run a Continuous Integration Local Test
+- ### Run a Continuous Integration Local Test
     + In the Azure bash shell CLI, cd to the "***techchefmm-flask-ml-service***" directory.
     + Run the “***commands.sh***” bash script
         + ***`./commands.sh`***
@@ -75,13 +75,13 @@
 
 ![image](https://user-images.githubusercontent.com/32679444/235820340-bfc952dd-00e6-4cf0-a086-5e8848dc9625.png)
 
-### **Configure remote CI using GitHub Actions**
+## **Configure remote CI using GitHub Actions**
 
-#### This step configures GitHub Actions to test the project’s change events in GitHub and uses DevOps best practices to perform Continuous Integration remotely. When code is checked in and committed to the git-based repository, it will to be automatically tested, using configuration files and the GitHub Actions SaaS build service. Pushed changes to GitHub triggers the GitHub Actions container, which in turn runs a series of commands.  This diagram shows how code can be tested automatically by enabling GitHub Actions. ####
+### This step configures GitHub Actions to test the project’s change events in GitHub and uses DevOps best practices to perform Continuous Integration remotely. When code is checked in and committed to the git-based repository, it will to be automatically tested, using configuration files and the GitHub Actions SaaS build service. Pushed changes to GitHub triggers the GitHub Actions container, which in turn runs a series of commands.  This diagram shows how code can be tested automatically by enabling GitHub Actions. ####
 
 ![image](https://user-images.githubusercontent.com/32679444/236651102-297d5edb-5837-4c7b-af7c-f9a3014b5ac0.png)
 
-- Enable GitHub Actions
+- ### Enable GitHub Actions
     + In your GitHub account, on the "***Repositories***" page, select the "***techchefmm-flask-ml-service***" repo.
 
     ![image](https://user-images.githubusercontent.com/32679444/236315548-071fe2e6-a0dc-45d5-8c38-55998a7d761e.png)
@@ -98,7 +98,7 @@
 
     ![image](https://user-images.githubusercontent.com/32679444/236321722-7e44125e-d03d-44cf-980d-cf2fbf4fcd70.png)
 
-- On the ***Code*** page, copy/paste the following YAML scaffolding code into the "***Edit new file***" file space to compose the main.yml file, and click the "***Start commit***" button on the upper right-hand side of the page.
+- ### On the ***Code*** page, copy/paste the following YAML scaffolding code into the "***Edit new file***" file space to compose the main.yml file, and click the "***Start commit***" button on the upper right-hand side of the page.
 ```
 name: Python application test with Github Actions
 
@@ -131,10 +131,10 @@ jobs:
 
 ![image](https://user-images.githubusercontent.com/32679444/236327723-95274d44-2517-4bc3-896e-c2991ef1c303.png)
 
-- Verify Continuous Integration remote tests pass.
+- ### Verify Continuous Integration remote tests pass.
     + In the Azure Bash shell CLI, commit a change and push the change to GitHub then verify that both the lint and test steps in the project pass by checking "***Actions***" on GitHub.
 
-- Done
+- ### Done
 
     + The following screenshot shows a successful Continuous Integration local test run.
 
