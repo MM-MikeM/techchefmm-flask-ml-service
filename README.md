@@ -200,11 +200,11 @@ jobs:
 
     ![image](https://user-images.githubusercontent.com/32679444/236182318-247833a3-4868-4e4d-bf90-c842db55aac7.png)
 
-    + #### On the ***Select a repository*** page, select the GitHub repository.
+    + #### On the ***Select a repository*** page, select the "***techchefmm-flask-ml-service***" GitHub repository.
 
     ![image](https://user-images.githubusercontent.com/32679444/236183144-b086eba9-6cef-4132-bf76-b83ded6758cb.png)
 
-    + #### On the ***Review your pipeline YAML*** page, confirm the "azureServiceConnectionId:", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
+    + #### On the ***Review your pipeline YAML*** page, confirm the "***azureServiceConnectionId:***", "Python version:", and other YAML file parameter values are correct for the deployment then click the ***`Save and run`*** button option on the upper right-hand of the page.
 
     ![image](https://user-images.githubusercontent.com/32679444/236187046-02864fdf-5222-4e1f-97ed-4690235ce5d4.png)
 
