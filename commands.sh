@@ -6,7 +6,7 @@ source ~/.techchefmm-flask-ml-service/bin/activate
 make install
 
 # Deploy web app
-az webapp up -n techchefmm-flask-ml-service
+# az webapp up -n techchefmm-flask-ml-service
 
 # Test application, run locustfile.py file
 locust -f locustfile.py --headless -t 2s
