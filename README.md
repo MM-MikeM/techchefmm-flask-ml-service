@@ -14,7 +14,7 @@
 - ### Flask starter code: [LINK](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/tree/master/C2-AgileDevelopmentwithAzure/project/starter_files)
 - ### Locust installation: [LINK](https://docs.locust.io/en/stable/installation.html) (***for this project, will be installed by the Makefile***)
 
-### Use this project to get an idea of how to build a GitHub repository with scaffolding to perform Continuous Integration and Continuous Delivery. The project uses GitHub Actions with Makefile, requirements.txt files, and application code to perform Continuous Integration and Azure Pipelines to enable Continuous Delivery to Azure App Service to deploy a Machine Learning Microservice API. ####
+### Use this project to get an idea of how to build a GitHub repository with scaffolding to perform Continuous Integration and Continuous Delivery. The project uses GitHub Actions with Makefile, requirements.txt files, and application code to perform Continuous Integration and Azure Pipelines to enable Continuous Delivery to Azure App Service to deploy a Machine Learning Microservice API.  [YouTube Video Explanation/Demo](https://youtu.be/lVy-PfC2cec) ####
 
 ### The project uses a pre-trained, sklearn model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, and teacher-to-pupil ratios. Information about the data, which was initially taken from Kaggle, is on [the data source site](https://www.kaggle.com/c/boston-housing). This project serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling. ####
 
